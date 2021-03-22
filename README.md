@@ -1,8 +1,5 @@
 # WebjumpFront
 
-[![HitCount](http://hits.dwyl.com/KleytonLeite/Cult-Registration.svg)](http://hits.dwyl.com/KleytonLeite/Cult-Registration-git)
-
-
 ![Layout](src/assets/image/preview.jpg)
 
 
@@ -29,7 +26,7 @@ This project has been developed using the following technologies:
 ```bash
 
 # Clone the repository
-$ git clone https://KleytonLeite@bitbucket.org/KleytonLeite/webjump-front.git
+$ https://github.com/KleytonLeite/webjump.git
 
 # Enter into the directory
 $ cd webjump-front
