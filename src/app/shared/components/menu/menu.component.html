@@ -1,0 +1,50 @@
+<mat-toolbar class="area-login"></mat-toolbar>
+<mat-toolbar class="area-pesquisa">
+  <div class="pesquisa">
+    <img class="img" src="../../../../assets/image/logo_webjump.png" alt="">
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <mat-label>pesquisa</mat-label>
+        <input class="input-text" type="text" matInput placeholder="Pesquisa">
+        <mat-icon>search</mat-icon>
+      </mat-form-field>
+    </form>
+  </div>
+</mat-toolbar>
+
+  <mat-sidenav-container class="sidenav-container" (backdropClick)="closeSideNav()">
+    <mat-sidenav #sidenav class="sidenav" fixedInViewport="true">
+      <mat-toolbar class="menuColor" color="primary">Menu</mat-toolbar>
+      <mat-nav-list (click)="closeSideNav()">
+        <a mat-list-item>
+          <mat-icon class="color padding10">home</mat-icon>Inicial
+        </a>
+        <mat-divider></mat-divider>
+        <a mat-list-item>
+          <mat-icon class="color padding10">save_alt</mat-icon>Cadastrar produtos
+        </a>
+        <mat-divider></mat-divider>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-toolbar color="primary" class="header-toolbar">
+        <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="openSideNav()">
+          <mat-icon aria-label="Side nav toggle icon"> menu</mat-icon>
+        </button>
+        <span class="app-title"></span>
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+      </mat-toolbar>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon>account_circle</mat-icon>
+      <span>Conta</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>settings</mat-icon>
+      <span>Configurações</span>
+    </button>
+  </mat-menu>

@@ -1,0 +1,57 @@
+<div class="container"> 
+    <div class="filters">
+        <div class="tool-bar"></div>
+        <div class="filter-container">
+            <div class="text">
+                <p class="title">FILTRO POR</p>
+                <p class="sub-title">CATEGORIA</p>
+            </div>
+            <div *ngFor="let list of lists">
+                <button (click)="open(list.id)">&bull; {{list.path}}</button>
+            </div>
+            <div class="color">
+                <p class="color-title">CORES</p>
+                <div class="button-color"*ngFor="let item of items">
+                    <button class="btn-vermelha"(click)="openColor(item.color)" *ngIf="item.color === 'Vermelhor'"></button>  
+                </div>
+                <div class="button-color"*ngFor="let item of items">
+                    <button class="btn-preta"(click)="openColor(item.color)" *ngIf="item.color  === 'Preta'"></button>  
+                </div>
+                <div class="button-color"*ngFor="let item of items">
+                    <button class="btn-laranja"(click)="openColor(item.color)" *ngIf="item.color  === 'Laranja'"></button>  
+                </div>
+                <div class="button-color"*ngFor="let item of items">
+                    <button class="btn-amarela"(click)="openColor(item.color)" *ngIf="item.color  === 'Amarela'"></button>  
+                </div>
+                <div class="button-color"*ngFor="let item of items">
+                    <button class="btn-rosa"(click)="openColor(item.color)" *ngIf="item.color  === 'Rosa'"></button>  
+                </div>
+                <div class="button-color"*ngFor="let item of items">
+                    <button class="btn-azul"(click)="openColor(item.color)" *ngIf="item.color  === 'Azul'"></button>  
+                </div>
+                <div class="button-color"*ngFor="let item of items">
+                    <button class="btn-bege"(click)="openColor(item.color)" *ngIf="item.color  === 'Bege'"></button>  
+                </div>
+
+                <p class="color-title">GENERO</p>
+                <div class="button-color"*ngFor="let item of items">
+                    <button (click)="openColor(item.gender)" *ngIf="item.gender">{{item.gender}}</button>  
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="content-list">
+        <div class="box-container" *ngFor="let item of items">
+            <div class="card-list">
+                <div class="card-item">
+                    <img [src]="imageURL + item.image" alt="" class="card-img">
+                    <p class="text-name">{{item.name}}</p>
+                    <p class="text-price">{{item.price | currency: 'BRL'}}</p>
+                    <button class="card-button">COMPRAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

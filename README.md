@@ -1,27 +1,50 @@
 # WebjumpFront
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.4.
+[![HitCount](http://hits.dwyl.com/KleytonLeite/Cult-Registration.svg)](http://hits.dwyl.com/KleytonLeite/Cult-Registration-git)
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+![Layout](src/assets/image/preview.jpg)
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 📝 Description
 
-## Build
+**WebjumpFront** Project developed in the selection process of WebJumb, a product page where we filter products by category, color and gender, responsive layout and adaptable to mobile devices.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+---
 
-## Running unit tests
+## 💻 Used Technologies
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+This project has been developed using the following technologies:
 
-## Running end-to-end tests
+- AngularJS
+- Angular Material
+- SASS
+- JavaScript
+- Node js
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+---
 
-## Further help
+## 📁 Download
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+
+# Clone the repository
+$ git clone https://KleytonLeite@bitbucket.org/KleytonLeite/webjump-front.git
+
+# Enter into the directory
+$ cd webjump-front
+
+# Install dependencies
+$ npm install
+
+# Start the Api fake
+$ npm run server
+
+# Start the server
+$ ng s -o
+
+```
+
+---
+
+Made with 💙 by Kleyton Leite 👋🏻 [Get in touch!](https://www.linkedin.com/in/kleyton-leite-a384a76b/)

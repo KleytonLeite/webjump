@@ -1,1 +1,64 @@
 /* You can add global styles to this file, and also import other style files */
+@import './assets/styles/reset.scss';
+@import './assets/styles/themes.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+   height: 100%;
+   margin-left: calc(15%);
+   margin-right: calc(15%);
+                
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-sizing: border-box;
+}
+
+.center {
+  margin: 10px auto;
+}
+
+.width50 {
+  width: 50%;
+}
+
+.width75 {
+  width: 75%;
+}
+
+.main-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.float-left {
+  float: left;
+}
+
+.margin10 {
+  margin: 10px;
+}
+
+.padding10 {
+padding: 10px;
+}
+
+.break-line {
+  white-space: pre-line;
+}
+

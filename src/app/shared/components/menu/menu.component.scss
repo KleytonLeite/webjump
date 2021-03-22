@@ -1,0 +1,85 @@
+.area-login {
+  height: 1.5rem;
+  background: #333;
+  color: #fff;
+}
+
+.area-pesquisa {
+  height: 6rem;
+}
+
+.pesquisa {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin-left: calc(15%);
+  margin-right: calc(15%);
+  box-sizing: border-box;
+}
+
+.example-menu {
+  border: 1px;
+  border-color: #333;
+}
+
+.sidenav-container {
+  height: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.header-toolbar {
+  height: 2.7rem;
+}
+
+.header-toolbar button {
+  margin-left: calc(15%);
+  margin-right: calc(15%);
+}
+
+.sidenav {
+  width: 200px;
+  box-shadow: 3px 0 6px rgba(0, 0, 0, 0.24);
+}
+
+.app-content {
+  min-height: calc(80vh - 90px);
+}
+
+.app-title {
+  text-transform: uppercase;
+  padding-left: 26px;
+}
+
+.header-toolbar {
+  color: aliceblue;
+  justify-content: space-between;
+}
+.menuColor {
+  height: 4rem;
+  color: aliceblue;
+}
+
+@media (max-width: 320px) {
+  .area-pesquisa {
+
+    .pesquisa {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .img {
+      width: 100px;
+      height: 36px;
+    }
+    .example-full-width {
+      margin-right: 16px;
+      width: 100px;
+      height: 36px;
+     
+    }
+  }
+}
